@@ -25,7 +25,7 @@ for (const user of users) {
         let favorites=JSON.parse(localStorage.getItem('favorites'));
         if(!favorites){
             favorites=[];
-            favorites.push();
+            favorites.push(user);
             localStorage.setItem('favorites',JSON.stringify(favorites));
         }else {
             favorites.push(user);
